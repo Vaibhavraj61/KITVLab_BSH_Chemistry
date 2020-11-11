@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Experiment No. 1</title>
+  <title>Standardization of Solution</title>
 </head>
 
 <body>
   <div class="container-fluid">
     <!--Header-->
     <div class="row m-auto p-auto">
-      <div class="jumbotron bg-info p-2 col-lg-12 col-12 mt-2 mb-2">
-        <h4 class="text-dark font-weight-bold">Assignment No. 1</h4>
-        <p class="text-left text-justify text-inline font-weight-bold text-white" id="apparatus">Aim: To prepare 0.1
-          molar oxalic acid solution and standardization of NaOH solution.</p>
+      <div class="jumbotron bg-dark p-2 col-lg-12 col-12 mt-2 mb-2">
+        <h4 class="text-light text-center font-weight-bold tracking-in-contract-bck">Applied Chemistry Laboratory</h4>
+        <h5 class="text-center text-justify text-inline font-weight-bold text-white " id="name">Experiment No. 1:
+          Standardization of Solutions</h5>
+        <i>
+          <p class="text-center font-weight-bold text-white font-size-1">Aim : To prepare 0.1 molar oxalic acid solution
+            and standardization of NaOH solution.</p>
+        </i>
       </div>
     </div>
 
     <!--Button Part-->
 
-    <div class="row bg-light m-auto" style="position:-webkit-sticky; position:sticky; top:10px; z-index:1;">
-      <button type="button" class="col-lg-2 btn btn-success p-2 mb-2 ml-2" id="btn-start"
+    <div class="row m-auto"
+      style="position:-webkit-sticky; position:sticky; background-color: transparent black; top:10px; z-index:1;"
+      id="btn">
+      <button type="button" class="col-lg-2 btn btn-success p-2 mb-2 ml-2 roll-out-left" id="btn-start"
         style="height: 45px; width: 100px;">
-        <img src="css/img/play.png" class="img-responsive" height="25" width="25"> <b>Play</b></button>
+        <img src="css/img/play.png" class="img-responsive " height="25" width="25"> <b>Play</b></button>
 
       <button type="button" class="col-lg-2 btn btn-primary p-2 mb-2 ml-2" id="btn-next"
         style="height: 45px; width: 100px;">
@@ -32,18 +36,22 @@
 
       <button type="button" class="col-lg-2 btn btn-danger p-2 mb-2 ml-2" id="btn-stop"
         style="height: 45px; width: 100px;">
-        <img src="css/img/stop.png" class="img-responsive m-0 pr-1" height="25" width="30"> <b>Stop</b></button>
+        <img src="css/img/stop.png" class="img-responsive m-0 pr-1" height="25" width="30"> <b>Reset</b></button>
+      <button type="button" class="col-lg-2 btn btn-danger p-2 mb-2 ml-2" id="btn-finish"
+        style="height: 45px; width: 100px;">
+        <img src="css/img/stop.png" class="img-responsive m-0 pr-1" height="25" width="30"><b>Finish</b></button>
     </div>
 
     <!--Simulation-->
     <section>
       <div class="row border border-dark mr-2 ml-2 mb-3 rounded" id="simulation">
-        <div class="col-lg-4 col-md-6 col-12 border-right border-dark" id="task1" >
+        <div class="col-lg-4 col-md-6 col-12 border-right border-dark" id="task1">
           <p id="title1" class="text-dark font-weight-bold mt-2 border-bottom border-dark pb-2 pt-2 m-auto">A)
             Preparation of 0.1 M oxalic acid:</p>
           <div id="step-no1">
             <h5 class="text-left pt-2 pl-2">Step No 1:</h5>
-            <p class="pl-2">Weigh out accurately about 3.15 g of oxalic acid dihydrate crystals (H2C2O4. 2H2O) on
+            <p class="pl-2">Weigh out accurately about 3.15 g of oxalic acid dihydrate crystals
+              (H<sub>2</sub>C<sub>2</sub>O<sub>4</sub>. 2H<sub>2</sub>O) on
               analytical balance.</p>
           </div>
           <div id="step-no2">
@@ -60,7 +68,7 @@
 
           <!--temp-->
           <p id="step-no4" class="text-dark font-weight-bold mt-2 border-bottom border-dark pb-2 pt-2 m-auto">B)
-            Standardization of NaOH solution::</p>
+            Standardization of NaOH solution:</p>
           <div id="step-no5">
             <h5 class="text-left pt-2 pl-2">Step No 1:</h5>
             <p class="pl-2">Fill a burette with the standard oxalic acid solution.</p>
@@ -89,173 +97,168 @@
 
         <!--Image Section-->
         <div class="col-lg-4 col-md-4 col-sm-8 col-lx-4 col-12 mt-1">
-          <img src="css/img/analytical-bowl.png" class="img-responsive " id="img1"
+          <img src="css/img/analytical-bowl.png" class="img-responsive pt-5" id="img1"
             style="height: 300px; width: 300px;">
           <img src="css/img/flask-with-water.PNG" class="img-responsive pt-5" id="img2"
             style="height: 300px; width: 300px;">
           <img src="css/img/conical-flask-with-solution.png" class="img-responsive pt-5" id="img3"
             style="height: 300px; width: 300px;">
-          <img src="css/img/fill-flask.PNG" class="img-responsive pt-5 mb-5 " id="img4"
+          <img src="css/img/fill-flasks.png" class="img-responsive pt-5 mb-5 " id="img4"
             style="height: 300px; width: 250px;">
           <img src="css/img/conical-flask-with-ph.png" class="img-responsive" id="img5"
             style="height: 300px; width: 300px; margin-top: -55px;">
           <img src="css/img/conical-flask-with-pink-solution.png" class="img-responsive pt-2 " id="img6"
-            style="height: 190px; width: 200px;">  
+            style="height: 190px; width: 200px;">
           <div id="img7">
             <h3>Calculation: </h3>
-            <div class="text-center font-weight-bold" style="border: 1px solid #000;border-radius: 2px;">
-              <p>Formula:</p>
-            <p>N1 x V1 = N2 x V2</p>
+            <div class="text-center font-weight-bold rounded" style="border: 1px solid #000;border-radius: 2px;">
+              <p><b><u>Formula: </u></b></p>
+              <p>N1 x V1 = N2 x V2</p>
             </div>
           </div>
-          <div class="pt-3" id="img8" style="visibility: hidden;" >
+          <div class="pt-3 col-12" id="img8" style="visibility: hidden;">
             <p>N1= Normality of oxalic acid = 0.1 M</p>
             <p>V1= Volume of oxalic acid used =12.0 ml</p>
             <p>N2= Normality of NaOH solution = ___M</p>
             <p>V2= Volume of alkali taken = 25 ml</p>
           </div>
-          <div class="pt-3" id="img9" style="visibility: hidden;">
+          <div class="pt-3 col-12" id="img9" style="visibility: hidden;">
             <p>N1= Normality of oxalic acid = 0.1 M</p>
             <p>V1= Volume of oxalic acid used =12.0 ml</p>
-            <p>N2= Normality of NaOH solution = <u>0.1M</u></p>
+            <p>N2= Normality of NaOH solution = <u><b>0.1M</b></u></p>
             <p>V2= Volume of alkali taken = 25 ml</p>
-            <p><b><u>RESULT:</u></b> Concentration of NaOH solution   = <b><u>0.1 mol/lit.</u></b></p>
+            <p class="bg-dark border border-white rounded p-1 text-white"><b><u>RESULT:</u></b><br> Concentration of NaOH
+              solution = <b><u>0.1 mol/lit.</u></b></p>
           </div>
-          
-
         </div>
 
         <!--Observation Table No.1-->
-        <div class="col-lg-4 col-md-12 col-sm-12 col-lx-12 col-12 mt-3" id="tables">
-          <h6  id="h6">Observation Table: </h6>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-lx-12 col-12" id="tables">
+          <h6 class="mt-2" id="h6">Observation Table: </h6>
           <div class="table-responsive-sm table-responsive-lg table-responsive-md table-responsive-xl pt-0"
             cellspacing="0" width="100%">
-            <table class="table table-bordered thead-dark table-hover table-sm" id="step-no7"> 
+            <table class="table-dark table-bordered table-hover table-sm t1" id="step-no7">
               <caption>Table 1.1: First Reading Table</caption>
+
               <thead>
-                <tr class="text-center">
-                  <th scope="col">Burrete Level</th>
-                  <th scope="col">1st Reading (ml)</th>
-                  <th scope="col">2nd Reading (ml)</th>
-                  <th scope="col">3rd Reading (ml)</th>
-                  <th scope="col">C.B.R.ml (V1)</th>
+                <tr class="text-center border-whtie rounded">
+                  <th rowspan="2">Burret Level</th>
+                  <th colspan="3">Burrete Reading (ml)</th>
+                  <th rowspan="2">C.B.R. ml (V1)</th>
+                </tr>
+                <tr class="text-center border-whtie">
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
                 </tr>
               </thead>
               <tbody>
-                <tr class="text-center">
-                  <th scope="row">Final</th>
-                  <td>12.2</td>
+                <tr class="text-center border-whtie">
+                  <td>Final</td>
+                  <td>12.0</td>
                   <td></td>
                   <td></td>
-                  <td class="border-bottom-0"></td>
+                  <td rowspan="3"></td>
                 </tr>
-                <tr class="text-center">
-                  <th scope="row">Initial</th>
+                <tr class="text-center border-whtie">
+                  <td>Initial</td>
                   <td>0</td>
                   <td></td>
                   <td></td>
-                  <td class="border-top-0 border-bottom-0"></td>
                 </tr>
                 <tr class="text-center">
-                  <th scope="row">Difference</th>
-                  <td>12.2</td>
+                  <td>Difference</td>
+                  <td>12.0</td>
                   <td></td>
                   <td></td>
-                  <td class="border-top-0"></td>
                 </tr>
               </tbody>
             </table>
             <!--Table2-->
-            <table class="table table-bordered thead-dark table-hover table-sm" id="step-no8">  
+            <table class="table-dark table-bordered rounded-3 table-hover table-sm" id="step-no8">
               <caption>Table 1.2: Second Reading Table</caption>
+
               <thead>
-                <tr class="text-center" >
-                  <th scope="col">Burrete Level</th>
-                  <th scope="col">1st Reading (ml)</th>
-                  <th scope="col">2nd Reading (ml)</th>
-                  <th scope="col">3rd Reading (ml)</th>
-                  <th scope="col">C.B.R.ml (V1)</th>
+                <tr class="text-center border-whtie rounded">
+                  <th rowspan="2">Burret Level</th>
+                  <th colspan="3">Burrete Reading (ml)</th>
+                  <th rowspan="2">C.B.R. ml (V1)</th>
+                </tr>
+                <tr class="text-center border-whtie">
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
                 </tr>
               </thead>
               <tbody>
-                <tr class="text-center" >
-                  <th scope="row">Final</th>
-                  <td>12.2</td>
+                <tr class="text-center border-whtie">
+                  <td>Final</td>
+                  <td>12.0</td>
                   <td>11.8</td>
                   <td></td>
-                  <td class="border-bottom-0"></td>
+                  <td rowspan="3"></td>
                 </tr>
-                <tr class="text-center" >
-                  <th scope="row">Initial</th>
+                <tr class="text-center border-whtie">
+                  <td>Initial</td>
                   <td>0</td>
                   <td>0</td>
                   <td></td>
-                  <td class="border-top-0 border-bottom-0"></td>
                 </tr>
-                <tr class="text-center" >
-                  <th scope="row">Difference</th>
-                  <td>12.2</td>
+                <tr class="text-center">
+                  <td>Difference</td>
+                  <td>12.0</td>
                   <td>11.8</td>
                   <td></td>
-                  <td class="border-top-0"></td>
                 </tr>
               </tbody>
             </table>
             <!--Table2 End-->
             <!--Table3-->
-            <table class="table table-bordered thead-dark table-hover table-sm" id="step-no9">  
+            <table class="table-dark table-bordered rounded-3 table-hover table-sm" id="step-no8">
               <caption>Table 1.3: Third Reading Table</caption>
-              <thead>
-                <tr class="text-center" >
-                  <th scope="col">Burrete Level</th>
-                  <th scope="col">1st Reading (ml)</th>
-                  <th scope="col">2nd Reading (ml)</th>
-                  <th scope="col">3rd Reading (ml)</th>
-                  <th scope="col">C.B.R.ml (V1)</th>
+              <caption class="pb-2 formula font-weight-bold">C.B.R. (V1) = (R1+R2+R3)/3 </caption>
+              <thead class="border-white">
+                <tr class="text-center border-white rounded">
+                  <th rowspan="2">Burret Level</th>
+                  <th colspan="3">Burrete Reading (ml)</th>
+                  <th rowspan="2">C.B.R. ml (V1)</th>
+                </tr>
+                <tr class="text-center border-whtie">
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
                 </tr>
               </thead>
               <tbody>
-                <tr class="text-center" >
-                  <th scope="row">Final</th>
-                  <td>12.2</td>
+                <tr class="text-center border-whtie">
+                  <td>Final</td>
+                  <td>12.0</td>
                   <td>11.8</td>
                   <td>12.0</td>
-                  <td class="border-bottom-0"></td>
+                  <td rowspan="3">12.0</td>
                 </tr>
-                <tr class="text-center" >
-                  <th scope="row">Initial</th>
+                <tr class="text-center border-whtie">
+                  <td>Initial</td>
                   <td>0</td>
                   <td>0</td>
                   <td>0</td>
-                  <td class="border-top-0 border-bottom-0">12.0</td>
                 </tr>
-                <tr class="text-center" >
-                  <th scope="row">Difference</th>
-                  <td>12.2</td>
+                <tr class="text-center">
+                  <td>Difference</td>
+                  <td>12.0</td>
                   <td>11.8</td>
                   <td>12.0</td>
-                  <td class="border-top-0"></td>
                 </tr>
               </tbody>
             </table>
             <!--Table3 End-->
-
           </div>
         </div>
         <!--Observation Table End-->
-        
-
-
       </div>
     </section>
-    
-
-
   </div>
 </body>
-<style>
-
-</style>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -263,5 +266,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/2.3.0/draggabilly.pkgd.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/index.js"></script>
-
 </html>

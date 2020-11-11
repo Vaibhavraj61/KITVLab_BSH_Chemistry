@@ -1,3 +1,11 @@
+body{
+  background-image: radial-gradient( circle farthest-corner at -0.1% 1.8%,  rgba(255,77,77,0.7) 0%, rgba(255,184,129,0.34) 100.2% );
+  
+  background-size: cover;
+  height: 625px;
+
+
+}
 
 #img2 {
   animation: shake 0.5s;
@@ -18,10 +26,16 @@
   transition: shake 3s ;
 }
 
+.t1, .table
+{
+  border-radius: 5px;
+}
+
 #task1 , #tables{
   height: 430px;
   width: 400px;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 @keyframes shake {
@@ -49,3 +63,40 @@
   70% { transform: translate(3px, 1px) rotate(-1deg); }
 }
 
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(400px);
+            transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
