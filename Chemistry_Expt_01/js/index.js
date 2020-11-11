@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     var incr = 1, ic = 1;
-    $("#simulation,#step-no1,#step-no2,#step-no3,#step-no4,#step-no5,#step-no6,#step-no7,#step-no8,#step-no9,#step-no10,#btn-next,#btn-stop,#btn-finish,#btn-finish,#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#task2,#h6").hide();
+    $("#simulation,#step-no1,#step-no2,#step-no3,#step-no4,#step-no5,#step-no6,#step-no7,#step-no8,#step-no9,#step-no10,#btn-next,#btn-stop,#btn-finish,#btn-finish,#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#task2,#h6,#tables,#table1,#table2,#table3").hide();
     $("#step-no1,#step-no2,#step-no3").css("color", "black");
 
     $("#btn-start").click(function () {
@@ -31,17 +31,18 @@ $(document).ready(function () {
         }
 
         if (incr == 8) {
-            $('#h6').show();
+            $('#h6,#tables,#table1').show();
             $('#img7,#img8,#img9').hide();
         }
         if (incr == 9) {
-            $('#img7,#img8').show();
-            $('#step-no9').focus();
+            $('#img7,#img8,#tables,#table2').show();
+            $('#step-no9').focus().css("color","white");
             $('#img7,#img8').css("visibility", "visible");
         }
         if (incr == 10) {
-            $('#img7,#img8').show();
+            $('#img7,#img8,#tables,#table3').show();
             $('#img7,#img8').css("visibility", "visible");
+            $('#step-no9').css("color","white");
             $('#img9').hide();
         }
 
@@ -61,13 +62,13 @@ $(document).ready(function () {
     });
 
     $("#btn-stop").click(function () {
-        $("#simulation,#step-no1,#step-no2,#step-no3,#step-no4,#step-no5,#step-no6,#step-no7,#step-no8,#step-no9,#step-no10,#btn-next,#btn-stop,#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#h6").hide();
+        $("#simulation,#step-no1,#step-no2,#step-no3,#step-no4,#step-no5,#step-no6,#step-no7,#step-no8,#step-no9,#step-no10,#btn-next,#btn-stop,#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#h6,#tables,#table1,#tables2,#table3").hide();
         incr = 1;
         $("#btn-start").show();
     });
 
     $("#btn-finish").click(function () {
-        $("#simulation,#step-no1,#step-no2,#step-no3,#step-no4,#step-no5,#step-no6,#step-no7,#step-no8,#step-no9,#step-no10,#btn-next,#btn-stop,#btn-finish,#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#h6").hide();
+        $("#simulation,#step-no1,#step-no2,#step-no3,#step-no4,#step-no5,#step-no6,#step-no7,#step-no8,#step-no9,#step-no10,#btn-next,#btn-stop,#btn-finish,#img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9,#h6,#tables,#table1,#tables2,#table3").hide();
         incr = 1;
         $("#btn-start").show();
     });
